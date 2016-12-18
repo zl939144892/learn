@@ -23,7 +23,17 @@ class LoginController extends Controller {
     		return show(0, '密码不能为空');
     	}
 
-    	$ret = D('admin')->getAdminByUsername($username);
-    	print_r($ret);
+    	$ret = D('Admin')->getAdminByUsername($username);
+
+    	if(!$ret){
+    		return show(0,'该用户不存在');
+    	}
+
+    	if($ret['password'] != getMd5Password($password)){
+    		return show(0,'密码错误');
+    	}
+
+    	session('adminUser', $ret);
+    	return show(1,'登陆成功！');
     }
 }

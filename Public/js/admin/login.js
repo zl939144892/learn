@@ -22,6 +22,9 @@
  			if(result.status == 0){
  				return dialog.error(result.message);
  			}
+ 			if(result.status == 1){
+ 				return dialog.success(result.message, 'index.php?m=admin&c=index');
+ 			}
  		},'JSON');
  	}
  }
