@@ -42,7 +42,7 @@
       <label  class="sr-only">密码</label>
       <input type="password" name="password" id="inputPassword" class="form-control" placeholder="密码" required>
       <br />
-      <button class="btn btn-lg btn-primary btn-block" type="submit" >登录</button>
+      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="login.check()">登录</button>
     </form>
 
 </div> <!-- /container -->
@@ -50,6 +50,7 @@
 <script src="/Public/js/dialog/layer.js"></script>
 <script src="/Public/js/dialog.js"></script>
 <script src="/Public/js/admin/login.js"></script>
+<script src="/Public/js/login.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>
