@@ -81,7 +81,7 @@
     </ul>
   </div>
   <!-- /.navbar-collapse -->
-</nav>
+</nav>    
 
 <div id="page-wrapper">
 

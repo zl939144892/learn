@@ -8,6 +8,9 @@ use Think\Controller;
 class LoginController extends Controller {
 
     public function index(){
+        if(session('adminUser')){
+            $this->redirect('/admin?c=index');
+        }
     	return $this->display();
     }
 
@@ -35,5 +38,10 @@ class LoginController extends Controller {
 
     	session('adminUser', $ret);
     	return show(1,'登陆成功！');
+    }
+
+    public function loginout(){
+        session('adminUser',null);
+        $this->redirect('/index.php?m=admin&c=login');
     }
 }
