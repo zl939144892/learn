@@ -39,8 +39,14 @@ class MenuController extends CommonController{
 		 */
 		$data = array();
 
-		$page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
-		$pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 10;
+		if(isset($_GET['type']) && in_array($_GET['type'], array(1, 2))){//搜索操作
+			$data['type'] = intval($_GET['type']);
+			$this->assign('type', $data['type']);//让form-control选择完成后保持selected状态
+		}
+
+		//以下是排序分页操作
+		$page = $_GET['p'] ? $_GET['p'] : 1;
+		$pageSize = $_GET['pageSize'] ? $_GET['pageSize'] : 10;
 		$menus = D('Menu')->getMenus($data, $page, $pageSize);
 		$menusCount = D('Menu')->getMenusCount($data);
 
@@ -49,6 +55,10 @@ class MenuController extends CommonController{
 		$this->assign('pageRes', $pageRes);
 		$this->assign('menus', $menus);
 
+		$this->display();
+	}
+
+	public function edit(){
 		$this->display();
 	}
 }
