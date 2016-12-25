@@ -119,7 +119,7 @@
                         <div class="col-sm-5">
                             <select class="form-control" name="parentid">
                                 <option value="0">一级菜单</option>
-                                <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$parent): $mod = ($i % 2 );++$i;?><option value="<?php echo ($parent["menu_id"]); ?>"><?php echo ($parent["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$parent): $mod = ($i % 2 );++$i;?><option value="{$parent.menu_id}">{$parent.name}</option><?php endforeach; endif; else: echo "" ;endif; ?>
                             </select>
                         </div>
                     </div>-->
@@ -162,7 +162,7 @@
                         <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
                         <div class="col-sm-5">
                             <input type="radio" name="status" id="optionsRadiosInline1" value="1" checked> 开启
-                            <input type="radio" name="status" id="optionsRadiosInline2" value="0"> 关闭
+                            <input type="radio" name="status" id="optionsRadiosInline2" value="2"> 关闭
                         </div>
 
                     </div>

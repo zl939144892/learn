@@ -26,13 +26,13 @@ $("#singcms-button-submit").click(function(){
 			//失败
 			return dialog.error(result.message);
 		}
-	},"json"); //将获取到的数据post给服务器
+	},"JSON"); //将获取到的数据post给服务器
 });
 /**
  * 编辑模型
  */
 $(".singcms-table #singcms-edit").on("click", function(){
 	var id = $(this).attr("attr-id");
-	var url = SCOPE.edit_url;
+	var url = SCOPE.edit_url + '&id=' + id;
 	window.location.href=url;
 });

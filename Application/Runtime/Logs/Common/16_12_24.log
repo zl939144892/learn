@@ -1,0 +1,18 @@
+[ 2016-12-24T07:41:03+08:00 ] 127.0.0.1 /index.php?m=amenu&c=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Amenu
+
+[ 2016-12-24T07:41:06+08:00 ] 127.0.0.1 /index.php?m=menu&c=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载模块:Menu
+
+[ 2016-12-24T07:42:02+08:00 ] 127.0.0.1 /admin.php?m=menu&c=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+ERR: 无法加载模块:Menu
+

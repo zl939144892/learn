@@ -97,7 +97,7 @@
                         <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
                     </li>
                     <li class="active">
-                        <i class="fa fa-edit"></i> 添加
+                        <i class="fa fa-edit"></i> 修改
                     </li>
                 </ol>
             </div>
@@ -111,42 +111,33 @@
                     <div class="form-group">
                         <label for="inputname" class="col-sm-2 control-label">菜单名:</label>
                         <div class="col-sm-5">
-                            <input type="text" name="name" class="form-control" id="inputname" placeholder="请填写菜单名">
+                            <input type="text" name="name" class="form-control" id="inputname" value="<?php echo ($menu["name"]); ?>">
                         </div>
                     </div>
-                    <!--<div class="form-group">
-                        <label for="inputname" class="col-sm-2 control-label">父类菜单ID:</label>
-                        <div class="col-sm-5">
-                            <select class="form-control" name="parentid">
-                                <option value="0">一级菜单</option>
-                                <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$parent): $mod = ($i % 2 );++$i;?><option value="<?php echo ($parent["menu_id"]); ?>"><?php echo ($parent["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </select>
-                        </div>
-                    </div>-->
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">菜单类型:</label>
                         <div class="col-sm-5">
-                            <input type="radio" name="type" id="optionsRadiosInline1" value="1" checked> 后台菜单
-                            <input type="radio" name="type" id="optionsRadiosInline2" value="2"> 前端栏目
+                            <input type="radio" name="type" id="optionsRadiosInline1" value="1" <?php if($menu["type"] == 1): ?>checked<?php endif; ?>> 后台菜单
+                            <input type="radio" name="type" id="optionsRadiosInline2" value="2"<?php if($menu["type"] == 2): ?>checked<?php endif; ?>> 前端栏目
                         </div>
 
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">模块名:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" name="m" id="inputPassword3" placeholder="模块名如admin">
+                            <input type="text" class="form-control" name="m" id="inputPassword3" value="<?php echo ($menu["m"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">控制器:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" name="c" id="inputPassword3" placeholder="控制器如index">
+                            <input type="text" class="form-control" name="c" id="inputPassword3" value="<?php echo ($menu["c"]); ?>">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">方法:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" name="f" id="inputPassword3" placeholder="方法名如index">
+                            <input type="text" class="form-control" name="f" id="inputPassword3" value="<?php echo ($menu["f"]); ?>">
                         </div>
                     </div>
                     <!--<div class="form-group">
@@ -161,15 +152,15 @@
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
                         <div class="col-sm-5">
-                            <input type="radio" name="status" id="optionsRadiosInline1" value="1" checked> 开启
-                            <input type="radio" name="status" id="optionsRadiosInline2" value="0"> 关闭
+                            <input type="radio" name="status" id="optionsRadiosInline1" value="1" <?php if($menu["status"] == 1): ?>checked<?php endif; ?>> 开启
+                            <input type="radio" name="status" id="optionsRadiosInline2" value="2" <?php if($menu["status"] == 2): ?>checked<?php endif; ?>> 关闭
                         </div>
 
                     </div>
-
+                    <input type="hidden" name="menu_id" value="<?php echo ($menu["menu_id"]); ?>" />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+                            <button type="button" class="btn btn-default" id="singcms-button-submit">更新</button>
                         </div>
                     </div>
                 </form>
