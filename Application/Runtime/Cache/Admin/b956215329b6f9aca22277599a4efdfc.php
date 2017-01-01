@@ -43,7 +43,8 @@
 
 <div id="wrapper">
 
-    
+    <?php
+ $navs = D('Menu')->getAdminMenus(); $index = 'index'; ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -72,13 +73,12 @@
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
-      <li >
-        <a href=""><i class="fa fa-fw fa-dashboard"></i> 首页</a>
+      <li <?php echo (getActive($index)); ?>>
+        <a href="admin.php"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
       </li>
-      <li>
-        <a href=""><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
-      </li>
-
+      <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>>
+        <a href="<?php echo (getAdminMenuUrl($nav)); ?>"><i class="fa fa-fw fa-bar-chart-o"></i> <?php echo ($nav["name"]); ?></a>
+      </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
   </div>
   <!-- /.navbar-collapse -->
@@ -147,13 +147,13 @@
                         </thead>
                         <tbody>
                         <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><tr>
-                                <td><input size="4" type="text" name="" value=""/></td>
+                                <td><input size="4" type="text" name="listorder[<?php echo ($menu["menu_id"]); ?>]" value="<?php echo ($menu["listorder"]); ?>"/></td>
                                 <td><?php echo ($menu["menu_id"]); ?></td>
                                 <td><?php echo ($menu["name"]); ?></td>
                                 <td><?php echo ($menu["m"]); ?></td>
                                 <td><?php echo (getMenuType($menu["type"])); ?></td>
                                 <td><?php echo (status($menu["status"])); ?></td>
-                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menu["menu_id"]); ?>"></span>    <a href="javascript:void(0)" attr-id="" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
+                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menu["menu_id"]); ?>"></span>    <a href="javascript:void(0)" attr-id="<?php echo ($menu["menu_id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                         </tbody>
@@ -164,7 +164,9 @@
                             <?php echo ($pageRes); ?>
                         </ul>
                     </nav>
-
+                    <div>
+                      <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>更新排序</button>
+                    </div>
                 </div>
             </div>
 
