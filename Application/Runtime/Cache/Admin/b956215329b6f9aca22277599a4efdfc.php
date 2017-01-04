@@ -97,15 +97,17 @@
                         <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
                     </li>
                     <li class="active">
-                        <i class="fa fa-table"></i><?php echo ($nav); ?>
+                        <i class="fa fa-table"></i> 菜单列表
                     </li>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
-        <div class="row">
+        <div style='float:left;'>
+          <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 添加 </button>
+        </div>
+        <div class="row" >
             <form action="/admin.php" method="get">
-
                 <div class="input-group" style="padding-left: 15px;padding-right: 15px;">
                     <span class="input-group-addon">类型</span>
                     <select class="form-control" name="type">
@@ -123,10 +125,6 @@
                 <input type="hidden" name="a" value="index"/>
 
             </form>
-        </div>
-        <br>
-        <div>
-          <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
         </div>
         <div class="row">
             <div class="col-lg-6">
@@ -165,7 +163,7 @@
                         </ul>
                     </nav>
                     <div>
-                      <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>更新排序</button>
+                      <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle"><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
                     </div>
                 </div>
             </div>
