@@ -105,7 +105,7 @@
       </div>
       <div class="row">
         <form action="/admin.php" method="get">
-            <div style='float:right;width: 50%;' class="col-md-3">
+            <div style='float:right;width: 50%;padding-left: 0;' class="col-md-3">
               <div class="input-group">
                 <input class="form-control" name="title" type="text" value="<?php echo ($title); ?>" placeholder="输入文章标题进行搜索"/>
                   <span class="input-group-btn">
@@ -113,8 +113,7 @@
                   </span>
               </div>
             </div>
-            
-            <div style='float:right;width: 43%;' class="col-md-3">
+            <div style='float:right;width: 30%;padding-right: 0;' class="col-md-3">
               <div class="input-group">
                 <span class="input-group-addon">栏目</span>
                 <select class="form-control" name="catid">
@@ -123,7 +122,6 @@
                 </select>
               </div>
             </div>
-          
           <input type="hidden" name="c" value="content"/>
           <input type="hidden" name="a" value="index"/>
         </form>
@@ -153,7 +151,7 @@
                     <td><input type="checkbox" name="pushcheck" value="<?php echo ($new["news_id"]); ?>"></td>
                     <td><input size=4 type='text'  name='listorder[<?php echo ($new["news_id"]); ?>]' value="<?php echo ($new["listorder"]); ?>"/></td><!--6.7-->
                     <td><?php echo ($new["news_id"]); ?></td>
-                    <td><?php echo ($new["title"]); ?></td>
+                    <td style="color: <?php echo ($new["title_font_color"]); ?>"><?php echo ($new["title"]); ?></td>
                     <td><?php echo (getCatName($webSiteMenu,$new["catid"])); ?></td>
                     <td><?php echo (getCopyFromById($new["copyfrom"])); ?></td>
                     <td><?php echo (isThumb($new["thumb"])); ?></td>
@@ -179,12 +177,12 @@
             </nav>
               <div>
                 <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
-                <div style='float:right;display:inline;width:49%;' class="input-group">
-                  <select style='display:inline;width:91%;' class="form-control" name="position_id" id="select-push">
+                <div style='float:right;display:inline;' class="input-group">
+                  <button style='display:inline;float: right;' id="singcms-push" type="button" class="btn btn-primary">推送</button>
+                  <select style='display:inline;width:200px;float: inherit;' class="form-control" name="position_id" id="select-push">
                     <option value="0">请选择推荐位进行推送</option>
                     <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>"><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
                   </select>
-                  <button style='display:inline' id="singcms-push" type="button" class="btn btn-primary">推送</button>
                 </div>
               </div>
             </form>

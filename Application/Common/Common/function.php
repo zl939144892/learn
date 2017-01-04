@@ -69,13 +69,13 @@ function getCatName($navs, $id){
 }
 
 function getCopyFromById($id){
-	$copyFrom = C('COPY_FROM');
-	return $copyFrom['id'] ? $copyFrom['id'] : '';
+	$copyFrom = C("COPY_FROM");
+	return $copyFrom[$id] ? $copyFrom[$id] : '';
 }
 
 function isThumb($thumb){
 	if($thumb){
-		return '<span style="color:red">有</span>';
+		return '<span style="color:green">有</span>';
 	}
-	return '无';
+	return '<span style="color:red">无</span>';
 }

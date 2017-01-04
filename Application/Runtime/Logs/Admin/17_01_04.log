@@ -11139,3 +11139,769 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002583s ]
 INFO: [ app_end ] --END-- [ RunTime:0.005015s ]
 
+[ 2017-01-04T13:02:13+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit
+ERR: 非法操作:edit
+
+[ 2017-01-04T13:02:52+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`description`,`keywords`,`create_time`,`username`) VALUES ('test2','test2','','#5674ed','8','test2','test2','1483506171','admin') [ RunTime:0.0484s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.1572s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('test2','27','1483506172') [ RunTime:0.0005s ]
+
+[ 2017-01-04T13:20:53+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`description`,`keywords`,`create_time`,`username`) VALUES ('test3','test3','','#5674ed','3','test3','test3','1483507253','admin') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0195s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('test3','28','1483507253') [ RunTime:0.0004s ]
+
+[ 2017-01-04T13:24:57+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`description`,`keywords`,`create_time`,`username`) VALUES ('test3','test3','','','3','test3','test3','1483507497','admin') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0232s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('test3','29','1483507497') [ RunTime:0.0003s ]
+
+[ 2017-01-04T13:28:05+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0301s ]
+DEBUG: data:Array
+(
+    [title] => test4
+    [small_title] => test4
+    [thumb] => 
+    [title_font_color] => #5674ed
+    [catid] => 12
+    [copyFrom] => 1
+    [content] => test4
+    [description] => test4
+    [keywords] => test4
+)
+
+
+[ 2017-01-04T13:28:43+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+
+[ 2017-01-04T13:28:50+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0349s ]
+
+[ 2017-01-04T13:28:51+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0011s ]
+
+[ 2017-01-04T13:30:47+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002985s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0009s ]
+
+[ 2017-01-04T13:30:56+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002506s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+
+[ 2017-01-04T13:31:10+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002504s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0064s ]
+
+[ 2017-01-04T13:32:41+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+
+[ 2017-01-04T13:32:53+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('test4','test4','','#5674ed','12','2','test4','test4','1483507973','admin') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0188s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('test4','30','1483507973') [ RunTime:0.0004s ]
+
+[ 2017-01-04T13:48:14+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('分页','分页','','#ed568b','3','1','分页','分页','1483508894','admin') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0186s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('分页','31','1483508894') [ RunTime:0.0004s ]
+
+[ 2017-01-04T14:01:07+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit1231231
+ERR: 非法操作:edit1231231
+
+[ 2017-01-04T14:05:01+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-01-04T14:05:38+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-01-04T14:07:03+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-01-04T14:27:41+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-01-04T15:09:53+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-01-04T15:28:23+08:00 ] 127.0.0.1 /admin.php?c=content&a=find&id=23
+ERR: 非法操作:find
+
+[ 2017-01-04T15:41:39+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002014s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0015s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('12','12','/upload/2017/01/04/586ca72d1de1a.png','','3','0','12','12','1483515699','admin') [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('12','32','1483515699') [ RunTime:0.0004s ]
+
+[ 2017-01-04T16:36:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002359s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0018s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:36:29+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:36:30+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:37:28+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+ERR: 1054:Unknown column 'news_id23' in 'where clause'
+ [ SQL语句 ] : UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4375160f.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id23 )
+
+[ 2017-01-04T16:37:52+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'news_id23' in 'where clause'
+ [ SQL语句 ] : UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4375160f.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id23 )
+
+[ 2017-01-04T16:39:08+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+ERR: 1054:Unknown column 'news_id23' in 'where clause'
+ [ SQL语句 ] : UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id23 )
+
+[ 2017-01-04T16:39:20+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0270s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0072s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:40:37+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0472s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:40:39+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:40:43+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0009s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:40:44+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:40:44+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:40:44+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:40:44+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001557s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0400s ]
+SQL: UPDATE `cms_news` SET `title`='重庆美女球迷争芳斗艳',`small_title`='重庆美女球迷争芳斗艳',`thumb`='/upload/2017/01/04/586cb4aac5260.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='重庆美女球迷争芳斗艳',`keywords`='重庆美女 球迷 争芳斗艳' WHERE ( news_id=23 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;img src=&quot;/upload/2017/01/04/586cb49a68166.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/upload/2017/01/04/586cb49a832ea.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;color:#666666;font-family:\'Microsoft Yahei\', 微软雅黑, SimSun, 宋体, \'Arial Narrow\', serif;font-size:14px;line-height:28px;background-color:#FFFFFF;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2016年3月13日，2016年中超联赛第2轮：重庆力帆vs河南建业，主场美女球迷争芳斗艳。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=23 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:40:58+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='习近平今日下午出席解放军代表团全体会议',`small_title`='习近平出席解放军代表团全体会议',`thumb`='/upload/2017/01/04/586cb51916b82.png',`title_font_color`='',`catid`='3',`copyfrom`='1',`description`='中共中央总书记',`keywords`='中共中央总书记 国家主席 中央军委主席 习近平' WHERE ( news_id=21 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 3月13日下午，中共中央总书记、国家主席、中央军委主席习近平出席十二届全国人大四次会议解放军代表团全体会议，并发表重要讲话。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&lt;img src=&quot;/upload/2016/03/13/56e519acb12ee.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/span&gt;
+&lt;/p&gt;' WHERE ( news_id=21 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:41:02+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='习近平今日下午出席解放军代表团全体会议',`small_title`='习近平出席解放军代表团全体会议',`thumb`='/upload/2017/01/04/586cb51916b82.png',`title_font_color`='',`catid`='3',`copyfrom`='1',`description`='中共中央总书记',`keywords`='中共中央总书记 国家主席 中央军委主席 习近平' WHERE ( news_id=21 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 3月13日下午，中共中央总书记、国家主席、中央军委主席习近平出席十二届全国人大四次会议解放军代表团全体会议，并发表重要讲话。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&lt;img src=&quot;/upload/2016/03/13/56e519acb12ee.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/span&gt;
+&lt;/p&gt;' WHERE ( news_id=21 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:41:14+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='习近平今日下午出席解放军代表团全体会议',`small_title`='习近平出席解放军代表团全体会议',`thumb`='/upload/2017/01/04/586cb51916b82.png',`title_font_color`='',`catid`='3',`copyfrom`='1',`description`='中共中央总书记',`keywords`='中共中央总书记 国家主席 中央军委主席 习近平' WHERE ( news_id=21 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 3月13日下午，中共中央总书记、国家主席、中央军委主席习近平出席十二届全国人大四次会议解放军代表团全体会议，并发表重要讲话。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&lt;img src=&quot;/upload/2016/03/13/56e519acb12ee.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/span&gt;
+&lt;/p&gt;' WHERE ( news_id=21 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:41:42+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='习近平今日下午出席解放军代表团全体会议',`small_title`='习近平出席解放军代表团全体会议',`thumb`='/upload/2017/01/04/586cb51916b82.png',`title_font_color`='',`catid`='3',`copyfrom`='1',`description`='中共中央总书记',`keywords`='中共中央总书记 国家主席 中央军委主席 习近平' WHERE ( news_id=21 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 3月13日下午，中共中央总书记、国家主席、中央军委主席习近平出席十二届全国人大四次会议解放军代表团全体会议，并发表重要讲话。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;&lt;img src=&quot;/upload/2016/03/13/56e519acb12ee.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/span&gt;
+&lt;/p&gt;' WHERE ( news_id=21 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:41:56+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003160s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='12',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:25+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='12',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0012s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:28+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:28+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:28+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001601s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0144s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:28+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:29+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:29+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='1244',`small_title`='12',`thumb`='/upload/2017/01/04/586ca72d1de1a.png',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='121212',`keywords`='12' WHERE ( news_id=32 ) [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='12' WHERE ( news_id=32 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 111 行.
+
+[ 2017-01-04T16:42:51+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002003s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0010s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='test3' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:44:15+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0005s ]
+DEBUG: id:0
+NOTIC: [8] Undefined variable: conId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 108 行.
+DEBUG: conId:
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='test3' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:46:42+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='test3' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:47:01+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003374s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0009s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: newsContentData C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 106 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:47:04+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: newsContentData C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 106 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:47:08+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: newsContentData C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 106 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:47:09+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: newsContentData C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 106 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:47:09+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: newsContentData C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 106 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:47:09+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: newsContentData C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 106 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:47:50+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0011s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: newsContentData C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 106 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-01-04T16:48:09+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002601s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news_content` SET `content`='test33333' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:48:53+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test3',`small_title`='test3',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='test33333' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:49:04+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test33333',`small_title`='test3333',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='test33333' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-04T16:49:54+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='test33333',`small_title`='test3333',`thumb`='',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	test33333
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	啊额企鹅委屈委屈
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	亲亲亲亲亲亲
+&lt;/p&gt;' WHERE ( news_id=28 ) [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
