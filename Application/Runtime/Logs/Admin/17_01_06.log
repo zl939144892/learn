@@ -1,0 +1,300 @@
+[ 2017-01-06T10:23:02+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:3.1612s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.4955s ]
+
+[ 2017-01-06T10:23:02+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0505s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-01-06T10:23:02+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-01-06T10:23:02+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-01-06T12:57:21+08:00 ] 127.0.0.1 /admin.php?c=position&a=edit&id=18
+ERR: Think\Model:redirect方法不存在！
+
+[ 2017-01-06T13:01:21+08:00 ] 127.0.0.1 /admin.php?c=position&a=edit&id=18
+ERR: Think\Model:redirect方法不存在！
+
+[ 2017-01-06T13:02:34+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=30
+ERR: Think\Model:redirect方法不存在！
+
+[ 2017-01-06T13:11:23+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:11:24+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:11:25+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:02+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:07+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:08+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:08+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:08+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:08+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:08+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:08+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:09+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:11+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T13:12:25+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T14:51:25+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T14:52:56+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0734s ]
+SQL: UPDATE `cms_news` SET `title`='11111',`small_title`='1',`thumb`='',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='12',`keywords`='1' WHERE ( news_id=34 ) [ RunTime:0.0854s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0011s ]
+SQL: UPDATE `cms_news_content` SET `content`='1' WHERE ( news_id=34 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-06T14:53:09+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T14:55:17+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+ERR: Think\Controller:save方法不存在！
+
+[ 2017-01-06T14:59:57+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002475s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0009s ]
+SQL: UPDATE `cms_position` SET `name`='22',`description`='2' WHERE ( id=18 ) [ RunTime:0.0176s ]
+NOTIC: [8] Undefined index: content C:\wamp\www\news\Application\Admin\Controller\PositionController.class.php 第 66 行.
+
+[ 2017-01-06T15:00:21+08:00 ] 127.0.0.1 /admin.php?c=position&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_position` SET `name`='222222',`description`='2' WHERE ( id=18 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: content C:\wamp\www\news\Application\Admin\Controller\PositionController.class.php 第 66 行.
+
+[ 2017-01-06T15:02:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news` SET `title`='11',`small_title`='1',`thumb`='',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='12',`keywords`='1' WHERE ( news_id=34 ) [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+SQL: UPDATE `cms_news_content` SET `content`='1' WHERE ( news_id=34 ) [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-06T15:03:49+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-06T15:04:07+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-06T15:04:24+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-06T15:04:43+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0695s ]
+SQL: UPDATE `cms_news` SET `title`='111111',`small_title`='1',`thumb`='',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='12',`keywords`='1' WHERE ( news_id=34 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news_content` SET `content`='1' WHERE ( news_id=34 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 110 行.
+
+[ 2017-01-06T15:13:56+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:13:57+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:13:57+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:13:58+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:13:58+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:13:59+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:13:59+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:14:00+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:14:00+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:17:34+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:17:34+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+ERR: 非法操作:setStatus
+
+[ 2017-01-06T15:20:37+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_position` SET `status`='-1' WHERE ( id=18 ) [ RunTime:0.0003s ]
+
+[ 2017-01-06T15:20:54+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+

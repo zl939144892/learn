@@ -18,7 +18,7 @@ class ContentController extends CommonController {
             $this->assign('catid', $conds['catid']);
         }
 
-        $page = $_POST['p'] ? $_POST['p'] : 1;
+        $page = $_GET['p'] ? $_GET['p'] : 1;
         $pageSize = 10;
         $news = D('News')->getNews($conds, $page, $pageSize);
         $count = D('News')->getNewsCount($conds);
@@ -107,12 +107,58 @@ class ContentController extends CommonController {
             $id = D('News')->updateById($newsId, $data);
             $newsContentData['content'] = $data['content'];
             $conId = D('NewsContent')->updateNewsById($newsId, $newsContentData);
-            if($id === false || $condId == false){
-                return show(1, '更新成功');
+            if($id === false || $condId === false){
+                return show(0, '更新失败');
             }
-            return show(0, '更新失败');
+            return show(1, '更新成功');
         }catch(Exception $e){
             return show(0, $e->getMessage());
         }
+    }
+
+    public function setStatus(){
+        try{
+            if($_POST){
+                $id = $_POST['id'];
+                $status = $_POST['status'];
+                if(!$id){
+                    return show(0, 'ID不存在');
+                }
+                $res = D('News')->updateStatusById($id, $status);
+                if($res){
+                    return show(1, '操作成功');
+                }else{
+                    return show(0, '操作失败');
+                }
+            }
+            return show(0, '没有提交的内容');
+        }catch(Exception $e){
+            return show(0, $e->getMessage());
+        }
+    }
+
+    public function listorder(){
+        $listorder = $_POST['listorder'];
+        $jumpUrl = $_SERVER['HTTP_REFERER'];
+        $errors = array();
+
+        try{
+            if($listorder){
+                foreach ($listorder as $newsId => $v) {
+                    // 执行更新
+                    $id = D('News')->updateNewsListorderById($newsId, $v);
+                    if($id === false){
+                        $errors[] = $newsId;
+                    }
+                }
+                if($errors){
+                    return show(0, '排序失败-'.implode(',', $errors), array('jump_url'=>$jumpUrl));
+                }
+                return show(1, '排序成功', array('jump_url'=>$jumpUrl));
+            }
+        }catch(Exception $e){
+            return show(0, $s->getMessage());
+        }
+        return show(0, '排序数据失败', array('jump_url'=>$jumpUrl));
     }
 }

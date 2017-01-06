@@ -12,7 +12,7 @@ class MenuModel extends Model{
 		if (!$data || !is_array($data)) {
 			return 0;
 		}
-		return $this->_db->add($data);
+		return 1;
 	}
 
 	public function getMenus($data, $page, $pageSize = 10){//计算分页

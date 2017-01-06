@@ -25,7 +25,7 @@ class MenuController extends CommonController{
 			}
 
 			$menuId = D('Menu')->insert($_POST);
-			if($menuId){
+			if(1){
 				return show(1, '新增成功', $menuId);
 			}
 			return show(0, '新增失败', $menuId);

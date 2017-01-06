@@ -16,10 +16,12 @@ class NewsContentModel extends Model{
 		if(!$data || !is_array($data)){
 			return 0;
 		}
+
 		$data['create_time'] = time();
 		if(isset($data['content']) && $data['content']){
 			$data['content'] = htmlspecialchars($data['content']);
 		}
+
 		return $this->_db->add($data);
 	}
 
