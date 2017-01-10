@@ -39,7 +39,7 @@ class PositionModel extends Model{
 		);
 
 		$res = $this->_db->where($data)
-			->order('id desc')
+			->order('id')
 			->select();
 
 		return $res;

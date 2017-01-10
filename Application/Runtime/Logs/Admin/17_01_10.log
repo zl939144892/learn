@@ -1,0 +1,74 @@
+[ 2017-01-10T09:29:04+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0862s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-01-10T09:29:48+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('28')  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0006s ]
+
+[ 2017-01-10T09:34:12+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002021s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('28')  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','test33333','','28','1','1483507253') [ RunTime:0.0161s ]
+
+[ 2017-01-10T09:50:12+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:52:21+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:52:27+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:52:57+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:52:59+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:54:02+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:54:03+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:54:06+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:54:09+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:55:19+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:55:59+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T09:56:11+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2017-01-10T15:34:37+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: Think\Model:getNormalPositions方法不存在！
+
+[ 2017-01-10T15:35:33+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: Think\Model:getBarPositions方法不存在！
+
+[ 2017-01-10T16:32:51+08:00 ] 127.0.0.1 /admin.php?position_id=&c=positioncontent&a=index&title=t
+ERR: XML标签语法错误 : condition='$position['id'] eq $positionId
+
+[ 2017-01-10T16:33:16+08:00 ] 127.0.0.1 /admin.php?position_id=&c=positioncontent&a=index&title=t
+ERR: XML标签语法错误 : condition='$position['id'] eq $positionId'
+

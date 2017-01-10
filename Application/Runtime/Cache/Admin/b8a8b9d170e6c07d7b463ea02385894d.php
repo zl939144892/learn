@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,7 +39,6 @@
 
 
 <body>
-
 <div id="wrapper">
 
     <?php
@@ -83,8 +81,7 @@
   </div>
   <!-- /.navbar-collapse -->
 </nav>    
-
-    <div id="page-wrapper">
+<div id="page-wrapper">
 
     <div class="container-fluid" >
 
@@ -93,39 +90,43 @@
             <div class="col-lg-12">
 
                 <ol class="breadcrumb">
-                    <li>
-                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=menu">菜单管理</a>
-                    </li>
+
                     <li class="active">
-                        <i class="fa fa-table"></i> 菜单列表
+                        <i class="fa fa-table"></i> 推荐位内容管理
                     </li>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
-        <div style='float:left;'>
-          <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 添加 </button>
-        </div>
-        <div class="row" >
-            <form action="/admin.php" method="get">
-                <div class="input-group" style="padding-left: 15px;padding-right: 15px;float: right;width: 40%;">
-                    <span class="input-group-addon">类型</span>
-                    <select class="form-control" name="type">
-                        <option value='' >请选择类型</option>
-
-                        <option value="1" <?php if($type == 1): ?>selected="selected"<?php endif; ?>>后台菜单</option>
-                        <option value="2" <?php if($type == 2): ?>selected="selected"<?php endif; ?>>前端导航</option>
-                    </select>
+        <div >
+            <button style="float: left;"  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 添加 </button>
+            <div style="float: right; width: 82%" class="row">
+                <form action="/admin.php" method="get">
+                    <div style="float: left; width: 37.5%" class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-addon">推荐位</span>
+                            <select class="form-control" name="position_id">
+                                <?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>" <?php if($position['id'] == $positionId): ?>selected="selected"<?php endif; ?>><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="hidden" name="c" value="positioncontent"/>
+                    <input type="hidden" name="a" value="index"/>
+                    <div style="float:right; width: 62.5%" class="col-md-3">
+                        <div class="input-group">
+                            <input class="form-control" name="title" type="text" value="<?php echo ($title); ?>" placeholder="文章标题" />
                     <span class="input-group-btn">
-                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
-                </span>
-                </div>
-
-                <input type="hidden" name="c" value="menu"/>
-                <input type="hidden" name="a" value="index"/>
-
-            </form>
+                      <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div style="clear:both;"></div>
         </div>
+
+        
+
         <div class="row">
             <div class="col-lg-6">
                 <h3></h3>
@@ -134,36 +135,38 @@
                     <table class="table table-bordered table-hover singcms-table">
                         <thead>
                         <tr>
-                            <th width="14">排序</th>
+                            <th width="14">排序</th><!--7-->
                             <th>id</th>
-                            <th>菜单名</th>
-                            <th>模块名</th>
-                            <th>类型</th>
+                            <th>标题</th>
+                            <th>时间</th>
+                            <th>封面图</th>
                             <th>状态</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><tr>
-                                <td><input size="4" type="text" name="listorder[<?php echo ($menu["menu_id"]); ?>]" value="<?php echo ($menu["listorder"]); ?>"/></td>
-                                <td><?php echo ($menu["menu_id"]); ?></td>
-                                <td><?php echo ($menu["name"]); ?></td>
-                                <td><?php echo ($menu["m"]); ?></td>
-                                <td><?php echo (getMenuType($menu["type"])); ?></td>
-                                <td><?php echo (status($menu["status"])); ?></td>
-                                <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($menu["menu_id"]); ?>"></span>    <a href="javascript:void(0)" attr-id="<?php echo ($menu["menu_id"]); ?>" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
-                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <?php if(is_array($contents)): $i = 0; $__LIST__ = $contents;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                    <td><input size=4 type='text' name='listorder<?php echo ($vo["id"]); ?>' value="<?php echo ($vo["listorder"]); ?>"/></td>
+                                    <td><?php echo ($vo["id"]); ?></td>
+                                    <td><?php echo ($vo["title"]); ?></td>
+                                    <td><?php echo (date("y-m-d H:i", $vo["create_time"])); ?></td>
+                                    <td><?php echo (isThumb($vo["thumb"])); ?></td>
+                                    <td>
+                                        <span  attr-status="<?php if($vo['status'] == 1): ?>0<?php else: ?>1<?php endif; ?>"  attr-id="" class="sing_cursor singcms-on-off" id="singcms-on-off" ><?php echo (status($vo["status"])); ?></span>
+                                    </td>
+                                    <td>
+                                        <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="<?php echo ($vo["id"]); ?>" ></span>
+                                        <a href="javascript:void(0)" id="singcms-delete"  attr-id="<?php echo ($vo["id"]); ?>"  attr-message="删除">
+                                            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                        </a>
+                                    </td>
+                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                         </tbody>
                     </table>
-                    </form>
-                    <nav>
-                        <ul class="pagination">
-                            <?php echo ($pageRes); ?>
-                        </ul>
-                    </nav>
+                    </from>
                     <div>
-                      <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle"><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
+                        <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
                     </div>
                 </div>
             </div>
@@ -181,16 +184,14 @@
 
 </div>
 <!-- /#wrapper -->
-<!-- Morris Charts JavaScript -->
 <script>
-
     var SCOPE = {
-        'add_url' : '/admin.php?c=menu&a=add',
-        'edit_url' : '/admin.php?c=menu&a=edit',
-        'set_status_url' : '/admin.php?c=menu&a=setStatus',
-        'listorder_url' : '/admin.php?c=menu&a=listorder',
-
+        'edit_url' : '/admin.php?c=positioncontent&a=edit',
+        'set_status_url' : '/admin.php?c=positioncontent&a=setStatus',
+        'add_url' : '/admin.php?c=positioncontent&a=add',
+        'listorder_url' : '/admin.php?c=positioncontent&a=listorder',
     }
+
 </script>
 <script src="/Public/js/admin/common.js"></script>
 
