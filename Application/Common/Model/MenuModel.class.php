@@ -90,4 +90,16 @@ class MenuModel extends Model{
 
 		return $res;
 	}
+
+	public function updateStatusById($id, $status){
+		if(!is_numeric($status)){
+			throw_exception('ststus不合法');
+		}
+		if(!$id || !is_numeric($id)){
+			throw_exception('ID不合法');
+		}
+		$data['status'] = $status;
+
+		return $this->_db->where('menu_id='.$id)->save($data);
+	}
 }

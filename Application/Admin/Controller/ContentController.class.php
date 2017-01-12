@@ -118,27 +118,6 @@ class ContentController extends CommonController {
         }
     }
 
-    public function setStatus(){
-        try{
-            if($_POST){
-                $id = $_POST['id'];
-                $status = $_POST['status'];
-                if(!$id){
-                    return show(0, 'ID不存在');
-                }
-                $res = D('News')->updateStatusById($id, $status);
-                if($res){
-                    return show(1, '操作成功');
-                }else{
-                    return show(0, '操作失败');
-                }
-            }
-            return show(0, '没有提交的内容');
-        }catch(Exception $e){
-            return show(0, $e->getMessage());
-        }
-    }
-
     public function listorder(){
         $listorder = $_POST['listorder'];
         $jumpUrl = $_SERVER['HTTP_REFERER'];
@@ -197,5 +176,13 @@ class ContentController extends CommonController {
         }
 
         return show(1, '推荐成功', array('jump_url' => $jumpUrl));
+    }
+
+    public function setStatus(){
+        $data = array(
+            'id' => intval($_POST['id']),
+            'status' => intval($_POST['status']),
+        );
+        return parent::setStatus($data, 'News');
     }
 }

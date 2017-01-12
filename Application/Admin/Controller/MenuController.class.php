@@ -85,23 +85,13 @@ class MenuController extends CommonController{
 	}
 
 	public function setStatus(){
-		try{
-			if($_POST){
-				$id = $_POST['id'];
-				$status = $_POST['status'];
-				//执行数据更新操作
-				$res = D('Menu')->updataStatusById($id, $status);
-				if($res){
-					return show(1, '操作成功');
-				}else{
-					return show(0, '操作失败');
-				}
-			}
-		}catch(Exception $e){
-			return show(0, $e->getMessage());
-		}
-		return show(0, '没有提交的数据');
+		$data = array(
+			'id' => intval($_POST['id']),
+			'status' => intval($_POST['status']),
+		);
+		return parent::setStatus($data, 'Menu');
 	}
+
 	public function listorder(){
 		$listorder = $_POST['listorder'];
 		$jumpUrl = $_SERVER['HTTP_REFERER'];

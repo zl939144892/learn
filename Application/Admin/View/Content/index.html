@@ -60,7 +60,7 @@
                 <tr>
                   <th id="singcms-checkbox-all" width="10"><input type="checkbox"/></th>
                   <th width="14">排序</th><!--6.7-->
-                  <th>id {[$webSiteMenu.1.menu_id]}</th>
+                  <th>id</th>
                   <th>标题</th>
                   <th>栏目</th>
                   <th>来源</th>
@@ -74,7 +74,7 @@
                 <volist name="news" id="new">
                   <tr>
                     <td><input type="checkbox" name="pushcheck" value="{[$new.news_id]}"></td>
-                    <td><input size=4 type='text'  name='listorder[{[$new.news_id]}]' value="{[$new.listorder]}"/></td><!--6.7-->
+                    <td><input size=4 type='text' name='listorder[{[$new.news_id]}]' value="{[$new.listorder]}"/></td><!--6.7-->
                     <td>{[$new.news_id]}</td>
                     <td style="color: {[$new.title_font_color]}">{[$new.title]}</td>
                     <td>{[$new.catid|getCatName=$webSiteMenu,###]}</td>

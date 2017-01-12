@@ -74,23 +74,10 @@ class PositionController extends CommonController{
 	}
 
 	public function setStatus(){
-		try{
-			if($_POST){
-				$id = $_POST['id'];
-				$status = $_POST['status'];
-				if(!$id){
-					return show(0, 'ID不存在');
-				}
-				$res = D('Position')->updateStatusById($id, $status);
-				if($res){
-					return show(1, '操作成功');
-				}else{
-					return show(0, '操作失败');
-				}
-			}
-			return show(0, '没有提交的内容');
-		}catch(Exception $e){
-			return show(0, $e->getMessage());
-		}
+		$data = array(
+			'id' => intval($_POST['id']),
+			'status' => intval($_POST['status']),
+		);
+		return parent::setStatus($data, 'Position');
 	}
 }

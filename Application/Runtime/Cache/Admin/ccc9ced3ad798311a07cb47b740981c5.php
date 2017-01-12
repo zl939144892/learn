@@ -136,7 +136,7 @@
                 <tr>
                   <th id="singcms-checkbox-all" width="10"><input type="checkbox"/></th>
                   <th width="14">排序</th><!--6.7-->
-                  <th>id <?php echo ($webSiteMenu["1"]["menu_id"]); ?></th>
+                  <th>id</th>
                   <th>标题</th>
                   <th>栏目</th>
                   <th>来源</th>
@@ -149,7 +149,7 @@
                 <tbody>
                 <?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$new): $mod = ($i % 2 );++$i;?><tr>
                     <td><input type="checkbox" name="pushcheck" value="<?php echo ($new["news_id"]); ?>"></td>
-                    <td><input size=4 type='text'  name='listorder[<?php echo ($new["news_id"]); ?>]' value="<?php echo ($new["listorder"]); ?>"/></td><!--6.7-->
+                    <td><input size=4 type='text' name='listorder[<?php echo ($new["news_id"]); ?>]' value="<?php echo ($new["listorder"]); ?>"/></td><!--6.7-->
                     <td><?php echo ($new["news_id"]); ?></td>
                     <td style="color: <?php echo ($new["title_font_color"]); ?>"><?php echo ($new["title"]); ?></td>
                     <td><?php echo (getCatName($webSiteMenu,$new["catid"])); ?></td>
