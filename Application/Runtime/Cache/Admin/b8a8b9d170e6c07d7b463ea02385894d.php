@@ -146,7 +146,7 @@
                         </thead>
                         <tbody>
                             <?php if(is_array($contents)): $i = 0; $__LIST__ = $contents;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                    <td><input size=4 type='text' name='listorder<?php echo ($vo["id"]); ?>' value="<?php echo ($vo["listorder"]); ?>"/></td>
+                                    <td><input size=4 type='text' name='listorder[<?php echo ($vo["id"]); ?>]' value="<?php echo ($vo["listorder"]); ?>"/></td>
                                     <td><?php echo ($vo["id"]); ?></td>
                                     <td><?php echo ($vo["title"]); ?></td>
                                     <td><?php echo (date("y-m-d H:i", $vo["create_time"])); ?></td>

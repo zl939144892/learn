@@ -118,30 +118,7 @@ class ContentController extends CommonController {
         }
     }
 
-    public function listorder(){
-        $listorder = $_POST['listorder'];
-        $jumpUrl = $_SERVER['HTTP_REFERER'];
-        $errors = array();
-
-        try{
-            if($listorder){
-                foreach ($listorder as $newsId => $v) {
-                    // 执行更新
-                    $id = D('News')->updateNewsListorderById($newsId, $v);
-                    if($id === false){
-                        $errors[] = $newsId;
-                    }
-                }
-                if($errors){
-                    return show(0, '排序失败-'.implode(',', $errors), array('jump_url'=>$jumpUrl));
-                }
-                return show(1, '排序成功', array('jump_url'=>$jumpUrl));
-            }
-        }catch(Exception $e){
-            return show(0, $s->getMessage());
-        }
-        return show(0, '排序数据失败', array('jump_url'=>$jumpUrl));
-    }
+    
 
     public function push(){
         $jumpUrl = $_SERVER['HTTP_REFERER'];
@@ -184,5 +161,9 @@ class ContentController extends CommonController {
             'status' => intval($_POST['status']),
         );
         return parent::setStatus($data, 'News');
+    }
+
+    public function listorder(){
+        return parent::listorder('News');
     }
 }

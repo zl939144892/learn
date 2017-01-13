@@ -12,13 +12,17 @@ class MenuModel extends Model{
 		if (!$data || !is_array($data)) {
 			return 0;
 		}
-		return 1;
+		return $this->_db->add($data);
 	}
 
 	public function getMenus($data, $page, $pageSize = 10){//计算分页
 		$data['status'] = array('neq', -1);
 		$offset = ($page - 1) * $pageSize;//设置起始位置
-		$list = $this->_db->where($data)->order('listorder desc, menu_id desc')->limit($offset, $pageSize)->select();
+		$list = $this->_db->
+			where($data)->
+			order('listorder desc, menu_id desc')->
+			limit($offset, $pageSize)->
+			select();
 		return $list;
 	}
 

@@ -96,14 +96,17 @@
               </table>
               <nav>
 
-              <ul >
-                {[$pageres]}
-              </ul>
+              
 
             </nav>
               <div>
-                <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
-                <div style='float:right;display:inline;' class="input-group">
+                <div style="float:left">
+                  <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
+                </div>
+                <ul style="width:40%; margin:0 auto;">
+                  {[$pageres]}
+                </ul>
+                <div style='float:right' class="input-group">
                   <button style='display:inline;float: right;' id="singcms-push" type="button" class="btn btn-primary">推送</button>
                   <select style='display:inline;width:200px;float: inherit;' class="form-control" name="position_id" id="select-push">
                     <option value="0">请选择推荐位进行推送</option>

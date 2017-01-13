@@ -158,12 +158,13 @@
                     </table>
                     </form>
                     <nav>
-                        <ul class="pagination">
-                            <?php echo ($pageRes); ?>
-                        </ul>
+                        
                     </nav>
                     <div>
-                      <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle"><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
+                      <button style="float:left" id="button-listorder" type="button" class="btn btn-primary dropdown-toggle"><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> 更新排序</button>
+                      <ul style="width:40%; margin:0 auto;">
+                            <?php echo ($pageRes); ?>
+                      </ul>
                     </div>
                 </div>
             </div>
