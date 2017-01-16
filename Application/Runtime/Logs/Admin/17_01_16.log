@@ -1,0 +1,265 @@
+[ 2017-01-16T10:02:55+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.3237s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0261s ]
+
+[ 2017-01-16T10:03:09+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2017-01-16T10:40:20+08:00 ] 127.0.0.1 /admin.php?c=basic&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011084s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\news\Application\Common\Model\BasicModel.class.php 第 5 行.
+
+[ 2017-01-16T13:49:08+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news` SET `title`='test33333',`small_title`='test3333',`thumb`='/upload/2017/01/16/587c5ed3092b7.jpg',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0614s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	test33333
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	啊额企鹅委屈委屈
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	亲亲亲亲亲亲
+&lt;/p&gt;' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 112 行.
+
+[ 2017-01-16T13:49:52+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0268s ]
+SQL: UPDATE `cms_news` SET `title`='李克强让部长们当第一新闻发言人',`small_title`='李克强让部长们当第一新闻发言人',`thumb`='/upload/2017/01/16/587c5efef4122.jpg',`title_font_color`='',`catid`='12',`copyfrom`='0',`description`='部长直接面对媒体回应关切，还能直接读到民情民生民意，而不是看别人的舆情汇报。',`keywords`='李克强  新闻发言人' WHERE ( news_id=22 ) [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p style=&quot;font-size:16px;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;&quot;&gt;
+	&amp;nbsp; &amp;nbsp; “部长通道”是今年两会一大亮点，成为两会开放透明和善待媒体的一个象征。在这个通道上，以往记者拉着喊着部长接受采访的场景不见了，变为部长主动站出来回应关切，甚至变成部长排队10多分钟等着接受采访。媒体报道称，两会前李克强总理接连两次“发话”，要求各部委主要负责人“要积极回应舆论关切”。部长主动放料，使这个通道上传出了很多新闻，如交通部长对拥堵费传闻的回应，人社部部长称网传延迟退休时间表属误读等。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;&quot;&gt;
+	&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;img src=&quot;/upload/2016/03/13/56e51b7fcd445.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;&quot;&gt;
+	&amp;nbsp; &amp;nbsp; &amp;nbsp; 记者之所以喜欢跑两会，原因之一是两会上高官云集，能“堵”到、“逮”到、“抢”到很多大新闻——现在不需要堵、逮和抢，部长们主动曝料，打通了各种阻隔，树立了开明开放的政府形象。期待“部长通道”不只在两会期间存在，最好能成为一种官媒交流、官民沟通的常态化新闻通道。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;&quot;&gt;
+	&lt;span style=&quot;font-family:\'Microsoft YaHei\', u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;font-size:16px;line-height:32px;&quot;&gt;部长们多面对媒体多发言，不仅能提高自身的媒介素养，也带动部门新闻发言人，更加重视与媒体沟通。部长直接面对媒体回应关切，还能直接读到民情民生民意，而不是看别人的舆情汇报。&lt;/span&gt;
+&lt;/p&gt;' WHERE ( news_id=22 ) [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 112 行.
+
+[ 2017-01-16T14:04:28+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news` SET `title`='test33333',`small_title`='test3333',`thumb`='/upload/2017/01/16/587c5ed3092b7.jpg',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='test33333',`keywords`='test3' WHERE ( news_id=28 ) [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	test33333
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	啊额企鹅委屈委屈
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	亲亲亲亲亲亲
+&lt;/p&gt;' WHERE ( news_id=28 ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 112 行.
+
+[ 2017-01-16T14:04:51+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003120s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0012s ]
+SQL: UPDATE `cms_news` SET `status`='-1' WHERE ( news_id=28 ) [ RunTime:0.0130s ]
+
+[ 2017-01-16T14:17:48+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002694s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_position_content` SET `status`='-1' WHERE ( id=36 ) [ RunTime:0.0004s ]
+
+[ 2017-01-16T14:17:59+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003190s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_position_content` SET `title`='李克强让部长们当第一新闻发言人',`position_id`='3',`thumb`='/upload/2017/01/16/587c6595c6737.jpg',`url`='',`news_id`='22',`status`='1' WHERE ( id=29 ) [ RunTime:0.0004s ]
+
+[ 2017-01-16T14:31:56+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_position_content` SET `title`='中超-汪嵩世界波制胜 富力客场1-0力擒泰达',`position_id`='2',`thumb`='/upload/2017/01/16/587c68da27bad.jpg',`url`='',`news_id`='24',`status`='1' WHERE ( id=35 ) [ RunTime:0.0007s ]
+
+[ 2017-01-16T14:32:56+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0011s ]
+SQL: UPDATE `cms_position_content` SET `title`='中超-汪嵩世界波制胜 富力客场1-0力擒泰达',`position_id`='2',`thumb`='/upload/2017/01/16/587c68da27bad.jpg',`url`='',`news_id`='24',`status`='1' WHERE ( id=35 ) [ RunTime:0.0005s ]
+
+[ 2017-01-16T14:33:11+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002883s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0019s ]
+SQL: UPDATE `cms_position_content` SET `title`='中超-汪嵩世界波制胜 富力客场1-0力擒泰达',`position_id`='3',`thumb`='/upload/2017/01/16/587c6925bc1a0.jpg',`url`='',`news_id`='24',`status`='1' WHERE ( id=31 ) [ RunTime:0.0005s ]
+
+[ 2017-01-16T14:33:26+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003296s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0017s ]
+SQL: UPDATE `cms_position_content` SET `title`='重庆美女球迷争芳斗艳',`position_id`='3',`thumb`='/upload/2017/01/16/587c69355f844.jpg',`url`='',`news_id`='23',`status`='1' WHERE ( id=30 ) [ RunTime:0.0006s ]
+
+[ 2017-01-16T15:40:35+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002166s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_position_content` SET `title`='2015劳伦斯国际体坛精彩瞬间',`position_id`='5',`thumb`='/upload/2017/01/16/587c78f14036d.jpg',`url`='http://sports.sina.com.cn/laureus/moment2015/',`news_id`='0',`status`='1' WHERE ( id=32 ) [ RunTime:0.0005s ]
+
+[ 2017-01-16T15:41:05+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002937s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_position_content` SET `title`='2015劳伦斯国际体坛精彩瞬间',`position_id`='5',`thumb`='/upload/2017/01/16/587c78f14036d.jpg',`url`='http://www.bilibili.com/',`news_id`='0',`status`='1' WHERE ( id=32 ) [ RunTime:0.0005s ]
+
+[ 2017-01-16T15:43:00+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2017-01-16T15:43:11+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `status`='0' WHERE ( menu_id=13 ) [ RunTime:0.0165s ]
+
+[ 2017-01-16T15:49:34+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `status`='0' WHERE ( menu_id=12 ) [ RunTime:0.0003s ]
+
+[ 2017-01-16T15:49:47+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0005s ]
+SQL: UPDATE `cms_menu` SET `status`='1' WHERE ( menu_id=12 ) [ RunTime:0.0004s ]
+
+[ 2017-01-16T15:50:47+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001608s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_menu` SET `status`='0' WHERE ( menu_id=11 ) [ RunTime:0.0003s ]
+
+[ 2017-01-16T15:51:42+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_menu` SET `status`='1' WHERE ( menu_id=11 ) [ RunTime:0.0003s ]
+
+[ 2017-01-16T15:52:40+08:00 ] 127.0.0.1 /admin.php?c=basic&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001877s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\news\Application\Common\Model\BasicModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) C:\wamp\www\news\Application\Common\Model\BasicModel.class.php 第 5 行.
+

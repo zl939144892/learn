@@ -75,7 +75,7 @@ class MenuModel extends Model{
 
 	public function getAdminMenus(){
 		$data = array(
-			'status' => array('neq', -1),
+			'status' => array('neq', 0),
 			'type' => 1,
 		);
 
@@ -84,7 +84,7 @@ class MenuModel extends Model{
 
 	public function getBarMenus(){
 		$data = array(
-			'status' => array('neq',-1),
+			'status' => 1,
 			'type' => 2,
 		);
 

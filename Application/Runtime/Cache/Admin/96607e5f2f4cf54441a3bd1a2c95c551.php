@@ -41,7 +41,7 @@
 <body>
 <div id="wrapper">
 
-    <?php
+  <?php
  $navs = D('Menu')->getAdminMenus(); $index = 'index'; ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -87,76 +87,22 @@
 
 		<!-- Page Heading -->
 		<div class="row">
-			<div class="col-lg-12">
-
-				<ol class="breadcrumb">
-					<li>
-						<i class="fa fa-dashboard"></i>  <a href="/admin.php?c=positioncontent">推荐位内容管理</a>
-					</li>
-					<li class="active">
-						<i class="fa fa-edit"></i> 编辑推荐位内容
-					</li>
-				</ol>
-			</div>
-		</div>
+	<div class="col-lg-12">
+		<a href="/admin.php?c=basic"><button type="button" class="btn <?php if($type == 1): ?>btn-primary<?php endif; ?>"> 基本配置</button></a>
+		<a href="/admin.php?c=basic&a=cache"><button type="button" class="btn <?php if($type == 2): ?>btn-primary<?php endif; ?>"> 缓存配置</button></a>
+	</div>
+</div>
 		<!-- /.row -->
-
 		<div class="row">
 			<div class="col-lg-6">
-
-				<form class="form-horizontal" id="singcms-form">
-					<div class="form-group">
-						<label for="inputname" class="col-sm-2 control-label">标题:</label>
-						<div class="col-sm-5">
-							<input type="text" name="title" class="form-control" id="inputname" placeholder="请填写标题" value="<?php echo ($vo["title"]); ?>">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputname" class="col-sm-2 control-label">选择推荐位:</label>
-						<div class="col-sm-5">
-							<select class="form-control" name="position_id">
-								<?php if(is_array($positions)): foreach($positions as $key=>$position): ?><option value="<?php echo ($position["id"]); ?>" <?php if($position['id'] == $vo['position_id']): ?>selected="selected"<?php endif; ?>><?php echo ($position["name"]); ?></option><?php endforeach; endif; ?>
-							</select>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="inputname" class="col-sm-2 control-label">缩图:</label>
-						<div class="col-sm-5">
-							<input id="file_upload"  type="file" multiple="true" >
-							<img style="display: none" id="upload_org_code_img" src="<?php echo ($vo["thumb"]); ?>" height="150">
-							<input id="file_upload_image" name="thumb" type="hidden" multiple="true" value="<?php echo ($vo["thumb"]); ?>">
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">url:</label>
-						<div class="col-sm-5">
-							<input type="text" class="form-control" name="url" id="inputPassword3" placeholder="请填写url地址" value="<?php echo ($vo["url"]); ?>">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputname" class="col-sm-2 control-label">文章ID:</label>
-						<div class="col-sm-5">
-							<input type="text" name="news_id" class="form-control" id="inputname" placeholder="如果和文章无关联的可以不添加文章id" <?php if($vo['news_id']): ?>value="<?php echo ($vo["news_id"]); ?>" <?php else: endif; ?>>
-						</div>
-					</div>
-					<div class="form-group">
-					<label for="inputPassword3" class="col-sm-2 control-label">状态:</label>
+				<div class="form-group">
+					<label for="inputname" class="col-sm-2 control-label">更新首页缓存:</label>
 					<div class="col-sm-5">
-						<input type="radio" name="status" id="optionsRadiosInline1" value="1" <?php if($vo['status'] == 1): ?>checked<?php endif; ?>> 开启
-						<input type="radio" name="status" id="optionsRadiosInline2" value="0" <?php if($vo['status'] == 0): ?>checked<?php endif; ?>> 关闭
+						<button type="button" class="btn" id="cache-index">确定更新</button>
 					</div>
-					<input type="hidden" name="id" value="<?php echo ($vo["id"]); ?>"/>
 				</div>
 
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">
-							<button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
-						</div>
-					</div>
-				</form>
-
+				
 
 			</div>
 
@@ -168,22 +114,29 @@
 
 </div>
 <!-- /#page-wrapper -->
+
 </div>
-<script>
-	var SCOPE = {
-		'save_url' : '/admin.php?c=positioncontent&a=add',
-		'jump_url' : '/admin.php?c=positioncontent&a=index',
-		'ajax_upload_image_url' : '/admin.php?c=image&a=ajaxuploadimage',
-		'ajax_upload_swf' : '/Public/js/party/uploadify.swf'
-	};
-	var thumb = "<?php echo ($vo["thumb"]); ?>";
-	if(thumb){
-		$('#upload_org_code_img').show();
-	}
-</script>
 <!-- /#wrapper -->
 <script type="text/javascript" src="/Public/js/admin/form.js"></script>
-<script src="/Public/js/admin/image.js"></script>
+<script>
+  $("#cache-index").click(function(){
+
+	var url = 'index.php?c=index&a=build_html';
+	var jump_url = '/admin.php?c=basic&a=cache';
+	var postData = {};
+
+	$.post(url, postData,function(result){
+	  if(result.status==1) {
+		// 成功
+		return dialog.success(result.message,jump_url);
+	  }else if(result.status==0) {
+		return dialog.error(result.message);
+	  }
+
+	},"JSON");
+  });
+
+</script>
 <script src="/Public/js/admin/common.js"></script>
 
 
