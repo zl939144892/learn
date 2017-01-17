@@ -42,13 +42,13 @@
 	var jump_url = '/admin.php?c=basic&a=cache';
 	var postData = {};
 
-	$.post(url, postData,function(result){
-	  if(result.status==1) {
+	$.post(url, postData, function(result){
+	if(result.status==1) {
 		// 成功
-		return dialog.success(result.message,jump_url);
-	  }else if(result.status==0) {
+		return dialog.success(result.message, jump_url);
+	}else if(result.status==0) {
 		return dialog.error(result.message);
-	  }
+	}
 
 	},"JSON");
   });

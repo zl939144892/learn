@@ -55,7 +55,7 @@
     
     
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Richard <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
           <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
@@ -125,13 +125,13 @@
 	var jump_url = '/admin.php?c=basic&a=cache';
 	var postData = {};
 
-	$.post(url, postData,function(result){
-	  if(result.status==1) {
+	$.post(url, postData, function(result){
+	if(result.status==1) {
 		// 成功
-		return dialog.success(result.message,jump_url);
-	  }else if(result.status==0) {
+		return dialog.success(result.message, jump_url);
+	}else if(result.status==0) {
 		return dialog.error(result.message);
-	  }
+	}
 
 	},"JSON");
   });

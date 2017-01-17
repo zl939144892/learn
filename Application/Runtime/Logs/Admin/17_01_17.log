@@ -1,0 +1,125 @@
+[ 2017-01-17T09:07:52+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-01-17T09:08:47+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_news` SET `title`='中超-汪嵩世界波制胜 富力客场1-0力擒泰达',`small_title`='中超-汪嵩世界波制胜 富力客场1-0力擒泰达',`thumb`='/upload/2017/01/17/587d6e9e21d13.jpg',`title_font_color`='',`catid`='3',`copyfrom`='0',`description`='中超-汪嵩世界波制胜 富力客场1-0力擒泰达',`keywords`='中超 汪嵩世界波  富力客场 1-0力擒泰达' WHERE ( news_id=24 ) [ RunTime:0.0366s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsContentModel.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_news_content` SET `content`='&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	新浪体育讯　　北京时间2016年3月12日晚7点35分，2016年中超联赛第2轮的一场比赛在天津水滴体育场进行。由天津泰达主场对阵广州富力。上半场双方机会都不多，&lt;strong&gt;下半场第57分钟，常飞亚左路护住皮球回做，汪嵩迎球直接远射世界波破门。随后天津泰达尽管全力进攻，但伊万诺维奇和迪亚涅都浪费了近在咫尺的机会&lt;/strong&gt;，最终不得不0-1主场告负。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src=&quot;/upload/2016/03/13/56e51f63a5742.png&quot; alt=&quot;&quot; width=&quot;474&quot; height=&quot;301&quot; title=&quot;&quot; align=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	由于首轮中超对阵北京国安的比赛延期举行，因此本场比赛实际上是天津泰达本赛季的首次亮相。新援蒙特罗领衔锋线，两名外援中后卫均首发出场。另一方面，在首轮主场不敌中超新贵河北华夏之后，本赛季球员流失较多的广州富力也许不得不早早开始他们的保级谋划。本场陈志钊红牌停赛，澳大利亚外援吉安努顶替了上轮首发的肖智。
+&lt;/p&gt;
+&lt;p&gt;
+	广州富力显然更快地适应了比赛节奏。第3分钟，吉安努前插领球大步杀入禁区形成单刀，回防的赞纳迪内果断放铲化解险情。第8分钟，雷纳尔迪尼奥左路踩单车过人后低平球传中，约万诺维奇伸出大长腿将球挡出底线。第14分钟，富力队左路传中到远点，聂涛头球解围险些失误，送出本场比赛第一个角球。
+&lt;/p&gt;
+&lt;p&gt;
+	天津队中场的配合逐渐找到一些感觉。第23分钟，天津队通过一连串小配合打到左路，周海滨下底传中被挡出底线。角球被富力队顶出后天津队二次将球传到禁区前沿，蒙特罗转身后射门但软弱无力被程月磊得到。第27分钟，约万诺维奇断球后直塞蒙特罗，蒙特罗转身晃开后卫在禁区外大力轰门打高。第29分钟，瓦格纳任意球吊入禁区，程月磊出击失误没有击到球，天津队后点将球再次传中，姜至鹏在对方夹击下奋力将球顶出底线。
+&lt;/p&gt;
+&lt;p&gt;
+	双方都没有太好的打开僵局的办法，开始陷入苦战。第33分钟，常飞亚左路晃开空档突然起脚，皮球擦着近门柱稍稍偏出底线。第43分钟，白岳峰被雷纳尔迪尼奥断球得手，后者利用速度甩开约万诺维奇，低平球传中又躲过了赞纳迪内的滑铲，但吉安努门前近在咫尺的推射被杨启鹏神奇地单腿挡出！双方半场只得0-0互交白卷。
+&lt;/p&gt;
+&lt;p&gt;
+	中场休息双方都没有换人。第47分钟，蒙特罗前场扣过多名对方队员后将球交给周海滨，但周海滨传中时禁区内的胡人天越位在先。第51分钟，王嘉楠右路晃开聂涛下底，但传中球又高又远。第54分钟，雷纳尔迪尼奥中场拿球挑过李本舰，后者无奈将其放倒吃到黄牌。第57分钟，常飞亚左路护住皮球回做，汪嵩迎球直接远射，杨启鹏鞭长莫及，皮球呼啸着直挂远角！世界波！富力队客场1-0取得领先。
+&lt;/p&gt;
+&lt;p&gt;
+	第62分钟，瓦格纳任意球吊到禁区，程月磊再次拿球脱手，幸亏张耀坤将球踢出了边线。天津队率先做出调整，迪亚涅和周通两名前锋登场换下郭皓和瓦格纳。第64分钟，天津队右路传中，周通禁区内甩头攻门，程月磊侧扑将球得到。富力队并未保守。第66分钟，常飞亚左路连续盘带杀入禁区，小角度射门打偏。不过一分钟，雷纳尔迪尼奥禁区右角远射，皮球在门前反弹后稍稍偏出。
+&lt;/p&gt;
+&lt;p&gt;
+	第71分钟，吉安努禁区角上回做，常飞亚跟进远射，杨启鹏单掌将球托出。天津队马上打出反击，蒙特罗禁区内转身将球分到右路，胡人天的传中找到后排插上的周海滨，但后者的大力头球顶得太正被程月磊侯个正着。富力队肖智换下卢琳。第74分钟，迪亚涅依靠强壮的身体杀入禁区直塞，蒙特罗停球后射门被密集防守的后卫挡出。
+&lt;/p&gt;
+&lt;p&gt;
+	于洋换下雷纳尔迪尼奥，富力队加强防守。第81分钟，天津队角球开出，迪亚涅甩头攻门顶偏。天津队连续得到角球机会。第85分钟，天津队角球二次进攻，周通传中，蒙特罗后点头球回做，约万诺维奇离门不到两米处转身扫射竟然将球踢飞！
+&lt;/p&gt;
+&lt;div id=&quot;ad_33&quot; class=&quot;otherContent_01&quot; style=&quot;margin:10px 20px 10px 0px;padding:4px;&quot;&gt;
+	&lt;iframe width=&quot;300px&quot; height=&quot;250px&quot; frameborder=&quot;0&quot; src=&quot;http://img.adbox.sina.com.cn/ad/28543.html&quot;&gt;
+	&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;
+	天津队范柏群换下李本舰。富力队用宁安换下常飞亚。第88分钟，胡人天战术犯规吃到黄牌。天津队久攻不下，第90分钟，赞纳迪内40米开外远射打偏。第93分钟，蒙特罗左路传中，迪亚涅头球争顶下来之后顺势扫射，皮球贴着横梁高出。广州富力最终将优势保持到了终场取得三分。
+&lt;/p&gt;
+&lt;p&gt;
+	进球信息：
+&lt;/p&gt;
+&lt;p&gt;
+	天津泰达：无。
+&lt;/p&gt;
+&lt;p&gt;
+	广州富力：第58分钟，卢琳左路回做，汪嵩跟上远射破网。
+&lt;/p&gt;
+&lt;p&gt;
+	黄牌信息：
+&lt;/p&gt;
+&lt;p&gt;
+	天津泰达：第54分钟，李本舰。第88分钟，胡人天。
+&lt;/p&gt;
+&lt;p&gt;
+	广州富力：无。
+&lt;/p&gt;
+&lt;p&gt;
+	红牌信息：
+&lt;/p&gt;
+&lt;p&gt;
+	无。
+&lt;/p&gt;
+&lt;p&gt;
+	双方出场阵容：
+&lt;/p&gt;
+&lt;p&gt;
+	天津泰达（4-5-1）：29-杨启鹏，23-聂涛、3-赞纳迪内、5-约万诺维奇、19-白岳峰，6-周海滨、7-李本舰（86分钟，28-范柏群）、8-胡人天、11-瓦格纳（63分钟，9-迪亚涅）、22-郭皓（63分钟，33-周通），10-蒙特罗；
+&lt;/p&gt;
+&lt;p&gt;
+	广州富力（4-5-1）：1-程月磊，11-姜至鹏、5-张耀坤、22-张贤秀、28-王嘉楠，7-斯文森、21-常飞亚（88分钟，15-宁安）、23-卢琳（73分钟，29-肖智）、31-雷纳尔迪尼奥（77分钟，3-于洋）、33-汪嵩，9-吉安努。
+&lt;/p&gt;
+&lt;p&gt;
+	（卢小挠）
+&lt;/p&gt;
+&lt;div&gt;
+&lt;/div&gt;
+&lt;div style=&quot;font-size:0px;&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;' WHERE ( news_id=24 ) [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: condId C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 112 行.
+
+[ 2017-01-17T13:33:46+08:00 ] 127.0.0.1 /admin.php?c=basic&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\news\Application\Common\Model\BasicModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) C:\wamp\www\news\Application\Common\Model\BasicModel.class.php 第 5 行.
+
+[ 2017-01-17T13:47:10+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\ContentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\NewsModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('23','24','21')  [ RunTime:0.0584s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\PositionContentModel.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0006s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','习近平今日下午出席解放军代表团全体会议','/upload/2017/01/04/586cb51916b82.png','21','1','1457854896') [ RunTime:0.0164s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','重庆美女球迷争芳斗艳','/upload/2017/01/04/586cb4aac5260.png','23','1','1457855680') [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','中超-汪嵩世界波制胜 富力客场1-0力擒泰达','/upload/2017/01/17/587d6e9e21d13.jpg','24','1','1457856460') [ RunTime:0.0005s ]
+

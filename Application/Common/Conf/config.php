@@ -11,4 +11,6 @@
 		'TMPL_L_DELIM' => '{[',
 		'TMPL_R_DELIM' => ']}',
 		'SHOW_PAGE_TRACE' =>true, 
+
+		'HTML_FILE_SUFFIX'=>'.html',//生成静态文件的后缀名
 	);

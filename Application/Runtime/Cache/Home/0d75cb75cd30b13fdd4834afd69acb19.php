@@ -25,42 +25,21 @@
     </div>
   </div>
 </header>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-9">
-        <div class="banner">
-          <div class="banner-left">
-            <div class="banner-info"><span>阅读数</span><i class="news_count node-<?php echo ($result['topPicNews'][0]['news_id']); ?>" news-id="<?php echo ($result['topPicNews'][0]['news_id']); ?>" id="node-<?php echo ($result['topPicNews'][0]['news_id']); ?>"></i></div>
-            <a target="_blank" href="/index.php?c=detail&id=<?php echo ($result['topPicNews'][0]['news_id']); ?>"><img height="360" src="<?php echo ($result['topPicNews'][0]['thumb']); ?>" alt=""></a>
-          </div>
-          <div class="banner-right">
-            <ul>
-              <?php if(is_array($result['topSmallNews'])): $i = 0; $__LIST__ = $result['topSmallNews'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                  <a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>"><img height="113" src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>"></a>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+<?php $vo = $result['news'];?>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-md-9">
 
-            </ul>
-          </div>
-        </div>
-        <div class="news-list">
-          <?php if(is_array($result['listNews'])): $i = 0; $__LIST__ = $result['listNews'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><dl>
-            <dt><a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>"><?php echo ($vo["title"]); ?></a></dt>
-            <dd class="news-img">
-              <a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo["news_id"]); ?>"><img width="200" height="120" src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["title"]); ?>"></a>
-            </dd>
-            <dd class="news-intro">
-              <?php echo ($vo["description"]); ?>
-            </dd>
-            <dd class="news-info">
-              <?php echo ($vo["keywords"]); ?> <span><?php echo (date("Y-m-d H:i:s",$vo["create_time"])); ?></span> 阅读(&nbsp;<i news-id="<?php echo ($vo["news_id"]); ?>" class="news_count node-<?php echo ($vo["news_id"]); ?>"><?php echo ($vo["count"]); ?></i>&nbsp;&nbsp;)
-            </dd>
-          </dl><?php endforeach; endif; else: echo "" ;endif; ?>
+					<div class="news-detail">
+						<h1><?php echo ($vo["title"]); ?></h1>
 
-        </div>
-      </div>
-      <!--网站右侧信息-->
-      <div class="col-sm-3 col-md-3">
+						<?php echo ($vo["content"]); ?>
+					</div>
+					
+				</div>
+
+				<div class="col-sm-3 col-md-3">
         <div class="right-title">
           <h3>文章排行</h3>
           <span>TOP ARTICLES</span>
@@ -79,10 +58,13 @@
             <a target="_blank" href="<?php echo ($vo["url"]); ?>"><img src="<?php echo ($vo["thumb"]); ?>" alt="<?php echo ($vo["name"]); ?>"></a>
           </div><?php endforeach; endif; else: echo "" ;endif; ?>
       </div>
-    </div>
-  </div>
-</section>
+				<!-- end right-->
+			</div>
+		</div>
+	</section>
 </body>
 <script src="/Public/js/jquery.js"></script>
-<script src="/Public/js/count.js"></script>
+<script>
+	
+</script>
 </html>
