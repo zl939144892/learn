@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>A-Li 后台管理平台</title>
+    <title>sing后台管理平台</title>
     <!-- Bootstrap Core CSS -->
     <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
 
@@ -39,16 +39,17 @@
 
 
 <body>
+
 <div id="wrapper">
 
-  <?php
- $navs = D('Menu')->getAdminMenus(); $username = getLoginUsername(); foreach($navs as $k=>$v){ if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } $index = 'index'; ?>
+    <?php
+ $navs = D('Menu')->getAdminMenus(); $index = 'index'; ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     
-    <a class="navbar-brand" >A-Li 内容管理平台</a>
+    <a class="navbar-brand" >singcms内容管理平台</a>
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
@@ -87,11 +88,18 @@
 
 		<!-- Page Heading -->
 		<div class="row">
-	<div class="col-lg-12">
-		<a href="/admin.php?c=basic"><button type="button" class="btn <?php if($type == 1): ?>btn-primary<?php endif; ?>"> 基本配置</button></a>
-		<a href="/admin.php?c=basic&a=cache"><button type="button" class="btn <?php if($type == 2): ?>btn-primary<?php endif; ?>"> 缓存配置</button></a>
-	</div>
-</div>
+			<div class="col-lg-12">
+
+				<ol class="breadcrumb">
+					<li>
+						<i class="fa fa-dashboard"></i>  <a href="javascript:void(0)">个人中心</a>
+					</li>
+					<li class="active">
+						<i class="fa fa-edit"></i> 配置
+					</li>
+				</ol>
+			</div>
+		</div>
 		<!-- /.row -->
 
 		<div class="row">
@@ -99,40 +107,26 @@
 
 				<form class="form-horizontal" id="singcms-form">
 					<div class="form-group">
-						<label for="inputname" class="col-sm-2 control-label">站点标题:</label>
+						<label  class="col-sm-2 control-label">用户名:</label>
 						<div class="col-sm-5">
-							<input type="text" name="title" value="<?php echo ($vo["title"]); ?>" class="form-control" id="inputname" placeholder="请填写站点标题">
+							<?php echo ($vo["username"]); ?>
 						</div>
 					</div>
 
 					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">站点关键词:</label>
+						<label  class="col-sm-2 control-label">真实姓名:</label>
 						<div class="col-sm-5">
-							<input type="text" class="form-control" value="<?php echo ($vo["keywords"]); ?>" name="keywords" id="inputPassword3" placeholder="请填写站点关键词">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">站点描述:</label>
-						<div class="col-sm-5">
-							<textarea class="form-control" rows="3" name="description"><?php echo ($vo["description"]); ?></textarea>
+							<input type="text" class="form-control" name="realname" id="inputPassword3" placeholder="" value="<?php echo ($vo["realname"]); ?>">
 						</div>
 					</div>
 
 					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">是否自动备份数据库:</label>
+						<label  class="col-sm-2 control-label">个人邮箱:</label>
 						<div class="col-sm-5">
-							<input type="radio" name="dumpmysql" id="optionsRadiosInline1" value="1" <?php if($vo['dumpmysql'] == 1): ?>checked<?php endif; ?>> 是
-                            <input type="radio" name="dumpmysql" id="optionsRadiosInline2" value="0" <?php if($vo['dumpmysql'] == 0): ?>checked<?php endif; ?>> 否
+							<input type="text" class="form-control" name="email" id="inputPassword3" placeholder="" value="<?php echo ($vo["email"]); ?>">
 						</div>
 					</div>
-
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">是否自动生成首页缓存:</label>
-						<div class="col-sm-5">
-							<input type="radio" name="cacheindex" id="optionsRadiosInline1" value="1" <?php if($vo['cacheindex'] == 1): ?>checked<?php endif; ?>> 是
-                            <input type="radio" name="cacheindex" id="optionsRadiosInline2" value="0" <?php if($vo['cacheindex'] == 0): ?>checked<?php endif; ?>> 否
-						</div>
-					</div>
+					<input type="hidden" name="admin_id" value="<?php echo ($vo["admin_id"]); ?>"/>
 
 
 					<div class="form-group">
@@ -155,15 +149,15 @@
 <!-- /#page-wrapper -->
 
 </div>
-<!-- /#wrapper -->
-<script type="text/javascript" src="/Public/js/admin/form.js"></script>
 <script>
 	var SCOPE = {
-		'save_url' : '/admin.php?c=basic&a=add',
-		'jump_url' : '/admin.php?c=basic',
+		'save_url' : '/admin.php?c=admin&a=save',
+		'jump_url' : '',
+
 	};
 
 </script>
+<!-- /#wrapper -->
 <script src="/Public/js/admin/common.js"></script>
 
 

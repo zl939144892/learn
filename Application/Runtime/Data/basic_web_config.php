@@ -1,1 +1,1 @@
-a:5:{s:5:"title";s:9:"A-Li_News";s:8:"keywords";s:6:"学习";s:11:"description";s:21:"学习用，别黑我";s:9:"dumpmysql";s:1:"0";s:10:"cacheindex";s:1:"1";}
+a:5:{s:5:"title";s:9:"A-Li_News";s:8:"keywords";s:6:"学习";s:11:"description";s:21:"学习用，别黑我";s:9:"dumpmysql";s:1:"1";s:10:"cacheindex";s:1:"1";}

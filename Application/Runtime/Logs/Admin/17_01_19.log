@@ -1,0 +1,21 @@
+[ 2017-01-19T10:23:04+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.1561s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0244s ]
+
+[ 2017-01-19T10:23:09+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-01-19T10:24:27+08:00 ] 127.0.0.1 /admin.php?c=basic&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\news\Application\Common\Model\BasicModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) C:\wamp\www\news\Application\Common\Model\BasicModel.class.php 第 5 行.
+

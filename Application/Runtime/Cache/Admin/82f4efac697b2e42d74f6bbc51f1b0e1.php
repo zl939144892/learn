@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>A-Li 后台管理平台</title>
+    <title>sing后台管理平台</title>
     <!-- Bootstrap Core CSS -->
     <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
 
@@ -39,16 +40,17 @@
 
 
 <body>
+
 <div id="wrapper">
 
-  <?php
+    <?php
  $navs = D('Menu')->getAdminMenus(); $username = getLoginUsername(); foreach($navs as $k=>$v){ if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } $index = 'index'; ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     
-    <a class="navbar-brand" >A-Li 内容管理平台</a>
+    <a class="navbar-brand" >singcms内容管理平台</a>
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
@@ -81,88 +83,80 @@
   </div>
   <!-- /.navbar-collapse -->
 </nav>    
-<div id="page-wrapper">
 
-	<div class="container-fluid">
+    <div id="page-wrapper">
 
-		<!-- Page Heading -->
-		<div class="row">
-	<div class="col-lg-12">
-		<a href="/admin.php?c=basic"><button type="button" class="btn <?php if($type == 1): ?>btn-primary<?php endif; ?>"> 基本配置</button></a>
-		<a href="/admin.php?c=basic&a=cache"><button type="button" class="btn <?php if($type == 2): ?>btn-primary<?php endif; ?>"> 缓存配置</button></a>
-	</div>
-</div>
-		<!-- /.row -->
+    <div class="container-fluid">
 
-		<div class="row">
-			<div class="col-lg-6">
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
 
-				<form class="form-horizontal" id="singcms-form">
-					<div class="form-group">
-						<label for="inputname" class="col-sm-2 control-label">站点标题:</label>
-						<div class="col-sm-5">
-							<input type="text" name="title" value="<?php echo ($vo["title"]); ?>" class="form-control" id="inputname" placeholder="请填写站点标题">
-						</div>
-					</div>
+                <ol class="breadcrumb">
+                    <li>
+                        <i class="fa fa-dashboard"></i> <a href="/admin.php?c=admin">用户管理</a>
+                    </li>
+                    <li class="active">
+                        <i class="fa fa-edit"></i> 添加
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
 
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">站点关键词:</label>
-						<div class="col-sm-5">
-							<input type="text" class="form-control" value="<?php echo ($vo["keywords"]); ?>" name="keywords" id="inputPassword3" placeholder="请填写站点关键词">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">站点描述:</label>
-						<div class="col-sm-5">
-							<textarea class="form-control" rows="3" name="description"><?php echo ($vo["description"]); ?></textarea>
-						</div>
-					</div>
+        <div class="row">
+            <div class="col-lg-6">
 
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">是否自动备份数据库:</label>
-						<div class="col-sm-5">
-							<input type="radio" name="dumpmysql" id="optionsRadiosInline1" value="1" <?php if($vo['dumpmysql'] == 1): ?>checked<?php endif; ?>> 是
-                            <input type="radio" name="dumpmysql" id="optionsRadiosInline2" value="0" <?php if($vo['dumpmysql'] == 0): ?>checked<?php endif; ?>> 否
-						</div>
-					</div>
+                <form class="form-horizontal" id="singcms-form">
+                    <div class="form-group">
+                        <label for="inputname" class="col-sm-2 control-label">用户名:</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="username" class="form-control" id="inputname" placeholder="请填写用户名">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">密码:</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="password" class="form-control" id="inputname" placeholder="请填写密码"/> 
+                        </div>
 
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">是否自动生成首页缓存:</label>
-						<div class="col-sm-5">
-							<input type="radio" name="cacheindex" id="optionsRadiosInline1" value="1" <?php if($vo['cacheindex'] == 1): ?>checked<?php endif; ?>> 是
-                            <input type="radio" name="cacheindex" id="optionsRadiosInline2" value="0" <?php if($vo['cacheindex'] == 0): ?>checked<?php endif; ?>> 否
-						</div>
-					</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">真实姓名:</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="realname" id="inputPassword3" placeholder="请填写真实姓名">
+                        </div>
+                    </div>
 
-
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">
-							<button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
-						</div>
-					</div>
-				</form>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+                        </div>
+                    </div>
+                </form>
 
 
-			</div>
+            </div>
 
-		</div>
-		<!-- /.row -->
+        </div>
+        <!-- /.row -->
 
-	</div>
-	<!-- /.container-fluid -->
+    </div>
+    <!-- /.container-fluid -->
 
 </div>
 <!-- /#page-wrapper -->
 
 </div>
 <!-- /#wrapper -->
-<script type="text/javascript" src="/Public/js/admin/form.js"></script>
+<!-- Morris Charts JavaScript -->
 <script>
-	var SCOPE = {
-		'save_url' : '/admin.php?c=basic&a=add',
-		'jump_url' : '/admin.php?c=basic',
-	};
 
+    var SCOPE = {
+        'save_url' : '/admin.php?c=admin&a=add',
+        'jump_url' : '/admin.php?c=admin',
+    }
 </script>
 <script src="/Public/js/admin/common.js"></script>
 

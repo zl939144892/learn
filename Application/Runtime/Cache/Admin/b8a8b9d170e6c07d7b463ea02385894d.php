@@ -90,7 +90,9 @@
             <div class="col-lg-12">
 
                 <ol class="breadcrumb">
-
+                    <li>
+                        <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=position">推荐位管理</a>
+                    </li>
                     <li class="active">
                         <i class="fa fa-table"></i> 推荐位内容管理
                     </li>

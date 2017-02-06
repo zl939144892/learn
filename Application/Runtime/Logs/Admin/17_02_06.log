@@ -1,0 +1,311 @@
+[ 2017-02-06T08:33:27+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0080s ]
+
+[ 2017-02-06T08:33:31+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-02-06T09:07:30+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\wamp\www\news\Application\Admin\Controller\MenuController.class.php 第 8 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\wamp\www\news\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0010s ]
+SQL: UPDATE `cms_menu` SET `status`='1' WHERE ( menu_id=13 ) [ RunTime:0.0365s ]
+
+[ 2017-02-06T09:45:29+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0009s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:45:30+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:45:30+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:45:30+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002092s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:49:36+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:49:37+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:49:37+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:49:37+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:49:37+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:49:37+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:49:38+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:51:03+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:51:04+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:51:04+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:51:12+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T09:53:26+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002366s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0532s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1486346006' WHERE ( admin_id=1 ) [ RunTime:0.0402s ]
+
+[ 2017-02-06T10:05:48+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2017-02-06T10:08:18+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_admin` SET `status`='0' WHERE ( admin_id=8 ) [ RunTime:0.0004s ]
+
+[ 2017-02-06T10:09:10+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_admin` SET `status`='-1' WHERE ( admin_id=8 ) [ RunTime:0.0003s ]
+
+[ 2017-02-06T10:12:21+08:00 ] 127.0.0.1 /admin.php?c=admin&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_admin` (`username`,`password`,`realname`) VALUES ('1','5ec68e6f496115b92ba5662a35922611','1') [ RunTime:0.0335s ]
+
+[ 2017-02-06T10:12:26+08:00 ] 127.0.0.1 /admin.php?c=admin&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_admin` SET `status`='-1' WHERE ( admin_id=9 ) [ RunTime:0.0004s ]
+
+[ 2017-02-06T10:58:28+08:00 ] 127.0.0.1 /admin.php?c=admin&a=save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+ERR: 非法操作:save
+
+[ 2017-02-06T10:58:34+08:00 ] 127.0.0.1 /admin.php?c=admin&a=save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+ERR: 非法操作:save
+
+[ 2017-02-06T11:03:21+08:00 ] 127.0.0.1 /admin.php?c=admin&a=save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_admin` SET `realname`='曾理',`email`='zl939144892@vip.qq.com' WHERE ( admin_id=1 ) [ RunTime:0.0005s ]
+
+[ 2017-02-06T13:19:30+08:00 ] 127.0.0.1 /admin.php?c=admin&a=personal
+ERR: 1146:Table 'news.cms_admnin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cms_admnin`
+
+[ 2017-02-06T13:19:42+08:00 ] 127.0.0.1 /admin.php?c=admin&a=personal
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cms_admin` WHERE ( admin_id="1 ) LIMIT 1  
+
+[ 2017-02-06T13:20:52+08:00 ] 127.0.0.1 /admin.php?c=admin&a=personal
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cms_admin` WHERE ( admin_id="1 ) LIMIT 1  
+
+[ 2017-02-06T13:20:56+08:00 ] 127.0.0.1 /admin.php?c=admin&a=personal
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cms_admin` WHERE ( admin_id="1 ) LIMIT 1  
+
+[ 2017-02-06T13:22:22+08:00 ] 127.0.0.1 /admin.php?c=admin&a=save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002010s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_admin` SET `realname`='曾理1',`email`='zl939144892@vip.qq.com' WHERE ( admin_id=1 ) [ RunTime:0.0007s ]
+
+[ 2017-02-06T13:22:26+08:00 ] 127.0.0.1 /admin.php?c=admin&a=save
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_admin` SET `realname`='曾理',`email`='zl939144892@vip.qq.com' WHERE ( admin_id=1 ) [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:25:30+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="singwa3" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:25:37+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:25:41+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1486358741' WHERE ( admin_id=1 ) [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:25:50+08:00 ] 127.0.0.1 /admin.php?c=admin&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\wamp\www\news\Application\Admin\Controller\AdminController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_admin` (`username`,`password`,`realname`) VALUES ('1','5ec68e6f496115b92ba5662a35922611','1') [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:25:54+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-02-06T13:25:56+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:26:52+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1486358812' WHERE ( admin_id=10 ) [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:30:46+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1486359046' WHERE ( admin_id=1 ) [ RunTime:0.0003s ]
+
+[ 2017-02-06T13:59:21+08:00 ] 127.0.0.1 /admin.php
+ERR: Think\Model:getCount方法不存在！
+

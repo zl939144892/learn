@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>sing后台管理平台</title>
+    <title>A-Li 后台管理平台</title>
     <!-- Bootstrap Core CSS -->
     <link href="/Public/css/bootstrap.min.css" rel="stylesheet">
 
@@ -42,20 +42,20 @@
 <div id="wrapper">
 
   <?php
- $navs = D('Menu')->getAdminMenus(); $index = 'index'; ?>
+ $navs = D('Menu')->getAdminMenus(); $username = getLoginUsername(); foreach($navs as $k=>$v){ if($v['c'] == 'admin' && $username != 'admin'){ unset($navs[$k]); } } $index = 'index'; ?>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     
-    <a class="navbar-brand" >singcms内容管理平台</a>
+    <a class="navbar-brand" >A-Li 内容管理平台</a>
   </div>
   <!-- Top Menu Items -->
   <ul class="nav navbar-right top-nav">
     
     
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Richard <b class="caret"></b></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo getLoginUserName() ?> <b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li>
           <a href="/admin.php?c=admin&a=personal"><i class="fa fa-fw fa-user"></i> 个人中心</a>
